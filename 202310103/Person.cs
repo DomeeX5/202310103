@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _202310103
 {
-	internal class Person
+	internal abstract class Person
 	{
 		private string name;
 		private int age;
@@ -31,12 +31,12 @@ namespace _202310103
 		public string Gender { get => gender; set => gender = value; }
 
 
-		public string GetGoal()
+		public virtual string GetGoal()
 		{
 			return $"My goal is: Live for the moment!";
 		}
 
-		public string Introduce()
+		public virtual string Introduce()
 		{
 			return $"Hi, I'm {name}, a {age} year old {gender}.";
 		}
