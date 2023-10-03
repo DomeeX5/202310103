@@ -19,5 +19,15 @@ namespace _202310103
 		{
 			this.level = level;
 		}
+
+		public override string GetGoal()
+		{
+			return $"Educate brilliant junior software developers.";
+		}
+
+		public override string Introduce()
+		{
+			return $"Hi, I'm{Name}, a {Age} year old {Gender} {level} mentor.";
+		}
 	}
 }
