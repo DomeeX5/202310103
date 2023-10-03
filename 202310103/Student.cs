@@ -11,7 +11,7 @@ namespace _202310103
 		private string previousOrganization;
 		private int skippedDays;
 
-		public Student( string name, int age, string gender, string previousOrganization) : base(name, age, gender)
+		public Student(string name, int age, string gender, string previousOrganization) : base(name, age, gender)
 		{
 			skippedDays = 0;
 			this.previousOrganization = previousOrganization;
