@@ -27,7 +27,7 @@ namespace _202310103
 
 		public override string Introduce()
 		{
-			return $"Hi, I'm{Name}, a {Age} year old {Gender} {level} mentor.";
+			return $"{base.Introduce()} {level} mentor.";
 		}
 	}
 }

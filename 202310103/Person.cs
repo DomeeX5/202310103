@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _202310103
 {
-	internal abstract class Person
+	internal class Person
 	{
 		private string name;
 		private int age;
@@ -38,7 +38,7 @@ namespace _202310103
 
 		public virtual string Introduce()
 		{
-			return $"Hi, I'm {name}, a {age} year old {gender}.";
+			return $"Hi, I'm {name}, a {age} year old {gender}";
 		}
 	}
 }

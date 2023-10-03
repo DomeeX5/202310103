@@ -19,8 +19,8 @@ namespace _202310103
 
 		public Student()
 		{
-			previousOrganization = "The School of Life";
-			skippedDays = 0;
+			this.previousOrganization = "The School of Life";
+			this.skippedDays = 0;
 		}
 
 		public override string GetGoal()
@@ -30,7 +30,7 @@ namespace _202310103
 
 		public override string Introduce()
 		{
-			return $"Hi, I'm{Name}, a {Age} year old {Gender} from {previousOrganization} who skipped {skippedDays} days from the course already.";
+			return $"{base.Introduce()} from {previousOrganization} who skipped {skippedDays} days from the course already.";
 		}
 
 		public int SkipDays(int NumberOfDays)
